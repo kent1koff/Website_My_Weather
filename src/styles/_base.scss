@@ -1,0 +1,36 @@
+@use './variables' as *;
+
+body {
+  background: $main_background;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  margin-top: 100px;
+  position: relative;
+}
+
+input {
+  width: 609px;
+  height: 46px;
+  border-radius: 25px;
+  background: $bgr_input;
+  border: none;
+  padding: 10px 0px 10px 102px;
+  color: #524E4E;
+  font-size: 30px;
+  font-weight: 300;
+}

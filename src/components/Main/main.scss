@@ -1,0 +1,46 @@
+.searchBtn {
+  background: transparent;
+  border: none;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  position: absolute;
+  left: 40px;
+  top: 10.5px;
+}
+
+.weather-card {
+  border-radius: 32px;
+  background: linear-gradient(147deg, #AD36CB 26.56%, #333 68.75%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
+  width: 817px;
+  height: 425px;
+  margin-top: 53px;
+  position: absolute;
+  right: -53px;
+}
+
+.marker {
+  width: 31px;
+  height: 31px;
+}
+
+.term {
+  width: 18.733px;
+  height: 62.442px;
+}
+
+.weather_icon {
+  width: 90px;
+  height: 90px;
+}
+
+.row_tmp_card {
+  gap: 10px;
+  margin-top: 90px;
+}
+
+.additional-info {
+  gap: 45px;
+  margin-top: 60px;
+}

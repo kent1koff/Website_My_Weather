@@ -1,0 +1,56 @@
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: $main_font;
+}
+
+h1 {
+  color: $main_text_color;
+  font-size: 69px;
+  font-weight: 400;
+  margin: 0px 0px 0px 64px;
+}
+
+.select_day {
+  color: $main_text_color;
+  font-size: 30px;
+}
+
+.current_time {
+  color: $main_text_color;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 360px;
+}
+
+.location {
+  color: $main_text_color;
+  font-size: 30px;
+  margin: 40px 0px 0px 30px;
+  font-weight: 300;
+}
+
+.temperature {
+  color: $main_text_color;
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.date_card {
+  color: $main_text_color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-left: 30px;
+}
+
+.more_info {
+  color: $main_text_color;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
