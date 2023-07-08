@@ -1,7 +1,9 @@
 @use './variables' as *;
 
 body {
-  background: $main_background;
+  background: url(../images/bgr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -33,4 +35,8 @@ input {
   color: #524E4E;
   font-size: 30px;
   font-weight: 300;
+}
+
+header {
+  position: relative;
 }

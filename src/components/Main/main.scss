@@ -11,13 +11,11 @@
 
 .weather-card {
   border-radius: 32px;
-  background: linear-gradient(147deg, #AD36CB 26.56%, #333 68.75%);
+  background: linear-gradient(45deg, rgba(74,124,146,1) 0%, rgba(36,62,80,1) 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
   width: 817px;
   height: 425px;
-  margin-top: 53px;
-  position: absolute;
-  right: -53px;
+  margin: 53px 0px 67px 0px;
 }
 
 .marker {
@@ -37,10 +35,47 @@
 
 .row_tmp_card {
   gap: 10px;
-  margin-top: 90px;
+  margin: 70px 0px 30px 0px;
 }
 
 .additional-info {
   gap: 45px;
-  margin-top: 60px;
+  margin-top: 50px;
+}
+
+.time {
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.small-weather-card {
+  width: 121px;
+  height: 118px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, rgba(74,124,146,1) 0%, rgba(36,62,80,1) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
+}
+
+.small-weather-container {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.date-selector {
+  gap: 40px;
+  position: absolute;
+  top: -65px;
+  right: 100px;
+}
+
+.search {
+  position: relative;
 }

@@ -12,16 +12,21 @@ h1 {
   margin: 0px 0px 0px 64px;
 }
 
-.select_day {
+.date-button {
   color: $main_text_color;
   font-size: 30px;
+  background: transparent;
+  border: none;
 }
 
 .current_time {
   color: $main_text_color;
   font-size: 30px;
   font-weight: 500;
-  margin-left: 360px;
+  z-index: 1;
+  position: absolute;
+  right: 350px;
+  top: 262px;
 }
 
 .location {
@@ -53,4 +58,10 @@ h1 {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.temperature_small {
+  color: $main_text_color;
+  font-size: 21px;
+  font-weight: 300;
 }
