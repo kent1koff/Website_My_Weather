@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Weather from './weather';
 import search from '../../images/1.png';
 import '../Main/main.scss';
+import 'animate.css';
 
 const Main = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -29,7 +30,7 @@ const Main = () => {
   return (
     <div className='container search'>
       <div className='flex content-center'>
-        <form onSubmit={searchWeather}>
+        <form onSubmit={searchWeather} className='animate__animated animate__zoomInUp animate__slow 3s'>
           <div>
             <input placeholder='Введіть місто...' id='location' required />
           </div>

@@ -1,9 +1,25 @@
 @use './variables' as *;
 
+* {
+  cursor: url(../images/cursor.png), default;
+}
+
 body {
-  background: url(../images/bgr.jpg);
+  background: url(../images/bgr.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0A1C27;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #154768;
+  border-radius: 10px;
 }
 
 .container {
@@ -39,4 +55,27 @@ input {
 
 header {
   position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  input {
+    width: 260px;
+  }
+
+  form {
+    margin-top: 200px;
+  }
 }

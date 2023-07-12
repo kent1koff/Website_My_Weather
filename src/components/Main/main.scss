@@ -41,6 +41,7 @@
 .additional-info {
   gap: 45px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .time {
@@ -67,6 +68,7 @@
 .small-weather-container {
   gap: 30px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .date-selector {
@@ -78,4 +80,38 @@
 
 .search {
   position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .date-selector {
+    right: 50%;
+    transform: translate(50%, 250%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .weather-card {
+    width: 500px;
+    margin: 53px 0px 67px 0px;
+    height: 530px;
+  }
+
+  .additional-info {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .date-selector {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    top: -300px;
+    flex-direction: column;
+  }
+
+  .weather-card {
+    width: 360px;
+    height: 620px;
+  }
 }

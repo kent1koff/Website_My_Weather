@@ -13,10 +13,11 @@ h1 {
 }
 
 .date-button {
-  color: $main_text_color;
   font-size: 30px;
   background: transparent;
   border: none;
+  color: $main_text_color;
+  transition: all 0.7s;
 }
 
 .current_time {
@@ -64,4 +65,59 @@ h1 {
   color: $main_text_color;
   font-size: 21px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1440px) {
+  .current_time {
+    right: 24%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .current_time {
+    right: 19%;
+  }
+
+  h1 {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .current_time {
+    right: 13%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location {
+    justify-content: center;
+  }
+
+  .current_time {
+    right: 50%;
+    transform: translate(50%, 140%);
+  }
+
+  .date_card {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .current_time {
+    top: 365px;
+  }
+
+  h1 {
+    font-size: 53px;
+  }
+
+  header {
+    align-items: center;
+    gap: 10px;
+  }
 }

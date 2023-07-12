@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import marker from '../../images/3.png';
 import term from '../../images/2.png';
+import 'animate.css';
 
 const Weather = {
   apiKey: 'ca0261b24741dfb6eadf3c1a736c7e32',
@@ -80,7 +80,7 @@ const Weather = {
           <div className='flex items-center row_tmp_card content-center'>
             <img src={term} alt='термометр' className='term' />
             <div className='temperature'>{data.temperature}°C</div>
-            <img src={weatherIcon} alt='Иконка погоды' className='weather_icon' />
+            <img src={weatherIcon} alt='Иконкапогоды' className='weather_icon' />
           </div>
           <div className='date_card'>
             {data.month} {data.dayOfMonth}, {data.dayOfWeek}
@@ -132,7 +132,7 @@ const Weather = {
     };
 
     return (
-      <div className='date-selector flex'>
+      <div className='date-selector flex animate__animated animate__zoomInRight animate__slow 3s'>
         <button className={`date-button ${selectedDate === 'today' ? 'active' : ''}`} onClick={() => handleDateChange('today')}>Сьогодні</button>
         <button className={`date-button ${selectedDate === 'tomorrow' ? 'active' : ''}`} onClick={() => handleDateChange('tomorrow')}>Завтра</button>
         <button className={`date-button ${selectedDate === 'afterTomorrow' ? 'active' : ''}`} onClick={() => handleDateChange('afterTomorrow')}>Післязавтра</button>

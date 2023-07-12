@@ -1,9 +1,21 @@
 .logo {
   width: 67px;
-  margin-top: 15px;
+  margin: 15px 0px 0px 100px;
 }
 
 .row_header {
   justify-content: space-between;
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin: 3px 20px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    margin: 0;
+  }
 }
