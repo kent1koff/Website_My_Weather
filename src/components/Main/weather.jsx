@@ -3,7 +3,7 @@ import term from '../../images/2.png';
 import 'animate.css';
 
 const Weather = {
-  apiKey: 'ca0261b24741dfb6eadf3c1a736c7e32',
+  apiKey: process.env.REACT_APP_API_KEY,
   getWeatherData: (location, selectedDate, callback) => {
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${Weather.apiKey}`;
     fetch(apiUrl)
